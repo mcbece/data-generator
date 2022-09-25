@@ -1,0 +1,23 @@
+{
+    "name": "list-generator",
+    "version": "0.0.0",
+    "main": "./index.js",
+    "type": "module",
+    "author": "PFiS1737",
+    "private": true,
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/mcbece/list-generator#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mcbece/list-generator.git"
+    },
+    "bugs": "https://github.com/mebece/list-generator/issues",
+    "dependencies": {
+        "axios": "^0.24.0",
+        "comment-json": "^4.1.1",
+        "download-git-repo": "^3.0.2",
+        "fast-copy": "^2.1.1",
+        "merge-options": "^3.0.4",
+        "minimist": "^1.2.5"
+    }
+}
