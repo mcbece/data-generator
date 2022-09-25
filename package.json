@@ -1,17 +1,17 @@
 {
-    "name": "list-generator",
+    "name": "data-generator",
     "version": "0.0.0",
     "main": "./index.js",
     "type": "module",
     "author": "PFiS1737",
     "private": true,
     "license": "GPL-3.0",
-    "homepage": "https://github.com/mcbece/list-generator#readme",
+    "homepage": "https://github.com/mcbece/data-generator#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/mcbece/list-generator.git"
+        "url": "https://github.com/mcbece/data-generator.git"
     },
-    "bugs": "https://github.com/mebece/list-generator/issues",
+    "bugs": "https://github.com/mebece/data-generator/issues",
     "dependencies": {
         "axios": "^0.24.0",
         "comment-json": "^4.1.1",

@@ -1,4 +1,4 @@
-## mcbelist-generator
+## list-generator
 
 学业紧张，没时间去更新 beta 版本及各分支  
 
