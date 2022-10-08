@@ -6,7 +6,7 @@ export const LANGS = [
 export const VERSIONS = [
     "release",
     // 暂不对网易代理的中国版进行支持
-    // netease_dev,
+    // "netease_dev",
     // 精力有限，本地数据暂不支持 beta 版本，第三方数据也就干脆不获取对应的数据了
     // "beta"
 

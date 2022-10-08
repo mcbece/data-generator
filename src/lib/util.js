@@ -98,7 +98,7 @@ export function createIndex(path, { suffixToRead = ".js", dataVersion, withDir =
 }
 
 export function toCamelCase(str) {
-    return str.replace(/(\w)+(\.| |-|_)(\w)/g, (_, __, $1) => $1.toUpperCase())
+    return str.replace(/(\w)[\. _-](\w)/g, (_, $1, $2) => $1 + $2.toUpperCase())
 }
 
 export async function downloadGitRepoAsync(repository, destination, options, callback) {

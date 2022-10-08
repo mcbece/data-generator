@@ -30,17 +30,26 @@ async function initCaidlist() {
                 await downloadGitRepoAsync(repo, path + "/_caidlist")
                 each(DATA.VERSIONS, version => {
                     fs.mkdirSync(path + `/${lang}/${version}`)
+                    
+                    const dataPackage = readJson(path + `/_caidlist/version/${version}/package/data.json`)
+                    
                     each(DATA.BRANCHES, branch => {
+                        fs.mkdirSync(path + `/${lang}/${version}/${branch}`)
+                        
                         const dataOutput = readJson(path + `/_caidlist/output/clib/${version}/${branch}.json`)
-                        fs.writeFileSync(path + `/${lang}/${version}/${branch}.json.js`, `export default ${JSON.stringify(dataOutput.enums, null, 4)}`)
+                        fs.writeFileSync(path + `/${lang}/${version}/${branch}/common.json.js`, `export default ${JSON.stringify(dataOutput.enums, null, 4)}`)
+                        
                         const dataAutocompletion = readJson(path + `/_caidlist/version/${version}/autocompletion/${branch}.json`)
-                        fs.writeFileSync(path + `/${lang}/${version}/${branch}_autocompletion.json.js`, `export default ${JSON.stringify(dataAutocompletion, null, 4)}`)
+                        fs.writeFileSync(path + `/${lang}/${version}/${branch}/autocompletion.json.js`, `export default ${JSON.stringify(dataAutocompletion, null, 4)}`)
+                        
+                        if (dataPackage[branch]) fs.writeFileSync(path + `/${lang}/${version}/${branch}/data.json.js`, `export default ${JSON.stringify(dataPackage[branch], null, 4)}`)
+                        
+                        createIndex(path + `/${lang}/${version}/${branch}`, {
+                            suffixToRead: ".json.js"
+                        })
                     })
-                    const data = readJson(path + `/_caidlist/version/${version}/package/data.json`)
-                    each(data, (cont, branch) => {
-                        if (DATA.BRANCHES.includes(branch)) fs.writeFileSync(path + `/${lang}/${version}/${branch}_data.json.js`, `export default ${JSON.stringify(cont, null, 4)}`)
-                    })
-                    const langData = readJson(path + `/_caidlist/version/${version}/package/lang.json`) // available: langData["zh_cn"]; langData["en_us"] 
+                    
+                    const langData = readJson(path + `/_caidlist/version/${version}/package/lang.json`) // available: langData["zh_cn"]; langData["en_us"]
                     fs.writeFileSync(path + `/${lang}/${version}/lang.json.js`, `export default ${JSON.stringify(langData[lang] || {}, null, 4)}`)
                     
                     createIndex(path + `/${lang}/${version}`, {

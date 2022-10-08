@@ -55,10 +55,10 @@ function generate(_data, _dest, _env) {
         fs.mkdirSync(dest)
         const data = {
             caidlist: {
-                data: _data.caidlist[`${branch}_data`],
                 lang: _data.caidlist.lang,
-                common: _data.caidlist[branch],
-                autocompletion: _data.caidlist[`${branch}_autocompletion`]
+                data: _data.caidlist[branch].data,
+                common: _data.caidlist[branch].common,
+                autocompletion: _data.caidlist[branch].autocompletion
             },
             idlistweb: _data.idlistweb[branch],
             local: _data.local[branch]

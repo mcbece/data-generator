@@ -7,7 +7,7 @@ export default {
                 }
             },
             "name": "gamerule",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "commandblockoutput",
@@ -138,7 +138,7 @@ export default {
                 }
             },
             "name": "difficulty",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "peaceful",
@@ -165,7 +165,7 @@ export default {
                 }
             },
             "name": "ability",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "worldbuilder",
@@ -190,7 +190,7 @@ export default {
                 "url": "{Global: url.command_page}{This: name}"
             },
             "name": "command",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "?",
@@ -297,7 +297,7 @@ export default {
                 }
             },
             "name": "_command",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "? <page: int>",
@@ -476,10 +476,6 @@ export default {
             "description": "列出在线玩家。"
         },
         {
-            "name": "locate <feature: Structure> [useNewChunksOnly: Boolean]",
-            "description": "寻找并确定最近的特定结构的坐标。"
-        },
-        {
             "name": "locate biome <biome: Biome>",
             "description": "寻找并确定最近的特定生物群系的坐标。"
         },
@@ -505,19 +501,19 @@ export default {
         },
         {
             "name": "loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> kill <entity: target> [<tool>|mainhand|offhand: string]",
-            "description": "将指定实体的某一槽位替换为特定实体被击杀所能获得的战利品。"
+            "description": "将指定实体的部分槽位替换为特定实体被击杀所能获得的战利品。"
         },
         {
             "name": "loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> loot <loot_table: string> [<tool>|mainhand|offhand: string]",
-            "description": "将指定实体的某一槽位替换为通过特定战利品表所能获得的战利品。"
+            "description": "将指定实体的部分槽位替换为通过特定战利品表所能获得的战利品。"
         },
         {
             "name": "loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> kill <entity: target> [<tool>|mainhand|offhand: string]",
-            "description": "将指定实体的某一槽位替换为特定实体被击杀所能获得的战利品。"
+            "description": "将指定实体的部分槽位替换为特定实体被击杀所能获得的战利品。"
         },
         {
             "name": "loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> loot <loot_table: string> [<tool>|mainhand|offhand: string]",
-            "description": "将指定实体的某一槽位替换为通过特定战利品表所能获得的战利品。"
+            "description": "将指定实体的部分槽位替换为通过特定战利品表所能获得的战利品。"
         },
         {
             "name": "loot spawn <position: x y z> kill <entity: target> [<tool>|mainhand|offhand: string]",
@@ -704,11 +700,11 @@ export default {
             "description": "从存储中删除指定的结构。"
         },
         {
-            "name": "structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includeEntities: Boolean] [includeBlocks: Boolean] [integrity: float] [seed: string]",
+            "name": "structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]",
             "description": "从存储中渐进加载指定的结构。"
         },
         {
-            "name": "structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [includeEntities: Boolean] [includeBlocks: Boolean] [integrity: float] [seed: string]",
+            "name": "structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]",
             "description": "从存储中加载指定的结构。"
         },
         {
@@ -4945,6 +4941,14 @@ export default {
         {
             "name": "stop_suffocating",
             "description": ""
+        },
+        {
+            "name": "minecraft:spawn_baby_strider_jockey",
+            "description": ""
+        },
+        {
+            "name": "on_not_riding_parent",
+            "description": ""
         }
     ],
     "entity.event.minecraft:tadpole": [
@@ -6825,6 +6829,14 @@ export default {
         {
             "name": "stop_suffocating",
             "description": ""
+        },
+        {
+            "name": "minecraft:spawn_baby_strider_jockey",
+            "description": ""
+        },
+        {
+            "name": "on_not_riding_parent",
+            "description": ""
         }
     ],
     "entity.event.tadpole": [
@@ -7565,7 +7577,7 @@ export default {
                 "url": "{Global: url.normal_page}{This: description}"
             },
             "name": "entity",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "allay",
@@ -8505,7 +8517,7 @@ export default {
                 "url": "{Global: url.normal_page}{This: description}"
             },
             "name": "entity.summonable",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "allay",
@@ -9292,7 +9304,7 @@ export default {
                 }
             },
             "name": "entity.family",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "villager",
@@ -9799,7 +9811,7 @@ export default {
                 }
             },
             "name": "entity.slot",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "slot.armor",
@@ -20327,11 +20339,11 @@ export default {
         },
         {
             "name": "-1",
-            "description": "凋零玫瑰"
+            "description": "凋灵玫瑰"
         },
         {
             "name": "0",
-            "description": "凋零玫瑰"
+            "description": "凋灵玫瑰"
         }
     ],
     "block.data.wood": [
@@ -20577,7 +20589,7 @@ export default {
                 "url": "{Global: url.normal_page}{This: description}"
             },
             "name": "block",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "acacia_button",
@@ -22913,7 +22925,7 @@ export default {
         },
         {
             "name": "wither_rose",
-            "description": "凋零玫瑰"
+            "description": "凋灵玫瑰"
         },
         {
             "name": "wood",
@@ -37372,11 +37384,11 @@ export default {
         },
         {
             "name": "-1",
-            "description": "凋零玫瑰"
+            "description": "凋灵玫瑰"
         },
         {
             "name": "0",
-            "description": "凋零玫瑰"
+            "description": "凋灵玫瑰"
         }
     ],
     "item.data.wither_skeleton_spawn_egg": [
@@ -37843,7 +37855,7 @@ export default {
                 "url": "{Global: url.normal_page}{This: description}"
             },
             "name": "item",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "acacia_boat",
@@ -41135,7 +41147,7 @@ export default {
         },
         {
             "name": "wither_rose",
-            "description": "凋零玫瑰"
+            "description": "凋灵玫瑰"
         },
         {
             "name": "wither_skeleton_spawn_egg",
@@ -41238,7 +41250,7 @@ export default {
                 }
             },
             "name": "particle_emitter",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "minecraft:arrow_spell_emitter",
@@ -41805,7 +41817,7 @@ export default {
                 }
             },
             "name": "sound",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "ambient.basalt_deltas.additions",
@@ -42034,6 +42046,10 @@ export default {
         {
             "name": "block.composter.ready",
             "description": "堆肥桶：堆肥"
+        },
+        {
+            "name": "block.enchanting_table.use",
+            "description": "附魔台：使用"
         },
         {
             "name": "block.end_portal.spawn",
@@ -46232,7 +46248,7 @@ export default {
                 }
             },
             "name": "music",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "music.game",
@@ -46407,7 +46423,7 @@ export default {
                 }
             },
             "name": "animation",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "animation.actor.billboard",
@@ -48096,6 +48112,14 @@ export default {
         {
             "name": "animation.humanoid.tooting_goat_horn",
             "description": ""
+        },
+        {
+            "name": "animation.allay.look_at_target.default",
+            "description": ""
+        },
+        {
+            "name": "animation.allay.hold_item_fly",
+            "description": ""
         }
     ],
     "animation.controller": [
@@ -48106,7 +48130,7 @@ export default {
                 }
             },
             "name": "animation.controller",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "controller.animation.agent.move",
@@ -48661,6 +48685,10 @@ export default {
             "description": ""
         },
         {
+            "name": "controller.animation.allay.look_at_target",
+            "description": ""
+        },
+        {
             "name": "controller.animation.player.base",
             "description": ""
         }
@@ -48674,7 +48702,7 @@ export default {
                 "url": "{Global: url.normal_page}{This: description}"
             },
             "name": "effect",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "absorption",
@@ -49588,7 +49616,7 @@ export default {
                 "url": "{Global: url.normal_page}{This: description}"
             },
             "name": "enchantment",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "aqua_affinity",
@@ -49751,7 +49779,7 @@ export default {
                 }
             },
             "name": "fog",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "minecraft:fog_bamboo_jungle",
@@ -50047,22 +50075,22 @@ export default {
                 "url": "{Global: url.normal_page}{This: description}"
             },
             "name": "location",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
-            "name": "ancientcity",
+            "name": "ancient_city",
             "description": "远古城市"
         },
         {
-            "name": "bastionremnant",
+            "name": "bastion_remnant",
             "description": "堡垒遗迹"
         },
         {
-            "name": "buriedtreasure",
+            "name": "buried_treasure",
             "description": "埋藏的宝藏"
         },
         {
-            "name": "endcity",
+            "name": "end_city",
             "description": "末地城"
         },
         {
@@ -50082,11 +50110,11 @@ export default {
             "description": "海底神殿"
         },
         {
-            "name": "pillageroutpost",
+            "name": "pillager_outpost",
             "description": "掠夺者前哨站"
         },
         {
-            "name": "ruinedportal",
+            "name": "ruined_portal",
             "description": "废弃传送门"
         },
         {
@@ -50119,7 +50147,7 @@ export default {
                 "url": "{Global: url.normal_page}{This: description}"
             },
             "name": "biome",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "bamboo_jungle",
@@ -50466,7 +50494,7 @@ export default {
                 }
             },
             "name": "damage_cause",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "anvil",
@@ -50601,7 +50629,7 @@ export default {
                 }
             },
             "name": "loot.tool",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "minecraft:acacia_boat",
@@ -55029,7 +55057,7 @@ export default {
         },
         {
             "name": "minecraft:wither_rose",
-            "description": "凋零玫瑰"
+            "description": "凋灵玫瑰"
         },
         {
             "name": "minecraft:wither_skeleton_spawn_egg",
@@ -55140,7 +55168,7 @@ export default {
                 }
             },
             "name": "loot.table",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "chests/abandoned_mineshaft",
@@ -55763,7 +55791,7 @@ export default {
                 }
             },
             "name": "loot.table.wrapped",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "\"chests/abandoned_mineshaft\"",
@@ -56390,7 +56418,7 @@ export default {
                 }
             },
             "name": "lang",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "action.interact.balloon",
@@ -57569,30 +57597,6 @@ export default {
             "description": "水下火炬"
         },
         {
-            "name": "resourcePack.editor.client.description",
-            "description": "编辑器客户端资源"
-        },
-        {
-            "name": "resourcePack.editor.client.name",
-            "description": "编辑器资源"
-        },
-        {
-            "name": "resourcePack.editor.server.description",
-            "description": "编辑器服务器资源"
-        },
-        {
-            "name": "resourcePack.editor.server.name",
-            "description": "编辑器资源"
-        },
-        {
-            "name": "tile.sculk_sensor.name",
-            "description": "潜声传感器"
-        },
-        {
-            "name": "item.goat_horn.name",
-            "description": "山羊角"
-        },
-        {
             "name": "createWorldScreen.gameMode.spectator",
             "description": "观众"
         },
@@ -57710,7 +57714,7 @@ export default {
         },
         {
             "name": "hbui.AchievementDisabledModal.achievementsDisabledNotificationOperator",
-            "description": "将用户权限设置为访客或成员"
+            "description": "将玩家权限设置为访客或成员"
         },
         {
             "name": "hbui.AchievementDisabledModal.achievementsDisabledNotificationTemplate",
@@ -57970,7 +57974,7 @@ export default {
         },
         {
             "name": "hbui.CreateNewWorld.achievementsDisabledMessages.operator",
-            "description": "将用户权限设置为访客或成员"
+            "description": "将玩家权限设置为访客或成员"
         },
         {
             "name": "hbui.CreateNewWorld.achievementsDisabledMessages.template",
@@ -58609,6 +58613,18 @@ export default {
             "description": "您没有 Nintendo Online Services 会员资格"
         },
         {
+            "name": "hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionBody",
+            "description": "您需要此帐户才能在线玩游戏"
+        },
+        {
+            "name": "hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionButtonLabel",
+            "description": "更多信息"
+        },
+        {
+            "name": "hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionTitle",
+            "description": "您没有订阅 PlayStation®Plus"
+        },
+        {
             "name": "hbui.CreateNewWorld.multiplayer.playerAccessFriendsDescription",
             "description": "任何您已添加为《我的世界》好友的人都可以加入"
         },
@@ -58678,7 +58694,7 @@ export default {
         },
         {
             "name": "hbui.CreateNewWorld.multiplayer.playstationPlayerAccessTitle",
-            "description": "“PlayStation Network” 玩家访问"
+            "description": "“PlayStation Network\" 好友"
         },
         {
             "name": "hbui.CreateNewWorld.multiplayer.settingsTitle",
@@ -58715,6 +58731,10 @@ export default {
         {
             "name": "hbui.CreateNewWorld.multiplayerPlatformLockedModal.removeButtonSingular",
             "description": "删除包并打开多人游戏"
+        },
+        {
+            "name": "hbui.CreateNewWorld.multiplayerPlatformLockedModal.removeInputLegend",
+            "description": "确认"
         },
         {
             "name": "hbui.CreateNewWorld.multiplayerPlatformLockedModal.titlePlural",
@@ -58771,6 +58791,14 @@ export default {
         {
             "name": "hbui.CreateNewWorld.platformLockedModal.turnOffMultiplayerAndApplyPackButton",
             "description": "关闭多人游戏并应用包"
+        },
+        {
+            "name": "hbui.CreateNewWorld.resourcePacks.activateNarration",
+            "description": "已激活"
+        },
+        {
+            "name": "hbui.CreateNewWorld.resourcePacks.removeNarration",
+            "description": "已移除"
         },
         {
             "name": "hbui.CreateNewWorld.resourcePacks.activatedAllPacksMessageDescription",
@@ -59005,8 +59033,16 @@ export default {
             "description": "这很危险!"
         },
         {
+            "name": "hubi.CreateNewWorld.resourcePacks.narrationComponentTypeMarketplaceButton",
+            "description": "按钮"
+        },
+        {
             "name": "hbui.CreateNewWorld.resourcePacksPlatformLockedModal.closeInputLegend",
             "description": "关闭"
+        },
+        {
+            "name": "hbui.CreateNewWorld.resourcePacksPlatformLockedModal.removeInputLegend",
+            "description": "确认"
         },
         {
             "name": "hbui.CreateNewWorld.resourcePacksPlatformLockedModal.goBackButton",
@@ -59087,6 +59123,42 @@ export default {
         {
             "name": "hbui.CreateNewWorldSideMenu.resourcePacksTabLabel",
             "description": "资源包"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.unassignedDevVersion.title",
+            "description": "Realm 版已取消指派！"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.unassignedDevVersion.message",
+            "description": "在 Realms 插槽屏幕中，选择一个插槽并按下“编辑世界”，然后按下“开发选项”并选择要使用的提交选项。"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.memberOfTooManyRealms.title",
+            "description": "无法加入 Realm"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.memberOfTooManyRealms.message",
+            "description": "您的 Realms 会员已经到达了上限。"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.cannotConnectToRealm.title",
+            "description": "无法连接至 Realm。"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.cannotConnectToRealm.message",
+            "description": "尝试加入 Realm 失败。请稍后重试。"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.unknown.title",
+            "description": "意外错误！"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.unknown.message",
+            "description": "我们遇到了一个未知错误，请重试。"
+        },
+        {
+            "name": "hbui.CreateNewWorld.createOnRealmsError.close",
+            "description": "关闭"
         },
         {
             "name": "hbui.EditorActionBar.copy",
@@ -59378,7 +59450,7 @@ export default {
         },
         {
             "name": "hbui.EditorTab.count",
-            "description": "第 %1$s 个，共 %2$s 个"
+            "description": "%1$s 个 共 %2$s 个"
         },
         {
             "name": "hbui.EditorTab.elementType",
@@ -59390,11 +59462,11 @@ export default {
         },
         {
             "name": "hbui.EditorTab.selected",
-            "description": "已选择"
+            "description": "已选"
         },
         {
             "name": "hbui.EditorToggleButton.count",
-            "description": "第 %1$s 个，共 %2$s 个"
+            "description": "%1$s 共 %2$s 个"
         },
         {
             "name": "hbui.EditorToggleButton.elementType",
@@ -59406,7 +59478,7 @@ export default {
         },
         {
             "name": "hbui.EditorToggleButton.selected",
-            "description": "已选择"
+            "description": "已选"
         },
         {
             "name": "hbui.EditorToggleContainerSample.disabledTitle",
@@ -59586,7 +59658,7 @@ export default {
         },
         {
             "name": "hbui.Notifications.multiplayerWarnings.nintendoLocalMultiplayerPrivilegesBlockedThirdParty",
-            "description": "由于视听者限制，您无法进行本地多人课程。使用视听者中的“与他人交流”查看并管理多人课程设置。"
+            "description": "由于视听者限制，您无法进行本地多人课程。使用视听者的“与他人交流”查看并管理多人课程设置。"
         },
         {
             "name": "hbui.Notifications.multiplayerWarnings.nintendoMultiplayerPrivilegesBlockedThirdParty",
@@ -59678,7 +59750,7 @@ export default {
         },
         {
             "name": "hbui.PackListItem.narrationListLengthContext",
-            "description": "第 %1$s 个，共 %2$s 个"
+            "description": "%1$s 个，共 %2$s 个"
         },
         {
             "name": "hbui.PackListItem.narrationMultiplePacksHint",
@@ -59695,6 +59767,14 @@ export default {
         {
             "name": "hbui.PackListItem.narrationRemoveButton",
             "description": "移除包。按钮"
+        },
+        {
+            "name": "hbui.PackListItem.narrationSettingsButton",
+            "description": "包设置。按钮"
+        },
+        {
+            "name": "hbui.PackListItem.narrationValidateButton",
+            "description": "验证包。按钮"
         },
         {
             "name": "hbui.PackListItem.narrationReorderComplete",
@@ -59733,6 +59813,14 @@ export default {
             "description": "移除"
         },
         {
+            "name": "hbui.PackListItem.settingsButtonText",
+            "description": "设置"
+        },
+        {
+            "name": "hbui.PackListItem.validateButtonText",
+            "description": "驗證"
+        },
+        {
             "name": "hbui.PackTabs.activeTabButtonLabel",
             "description": "活跃"
         },
@@ -59761,8 +59849,64 @@ export default {
             "description": "首页"
         },
         {
+            "name": "hbui.RealmsStories.home.banner.NewStories",
+            "description": "当你离开的时候，有 %1$s 个新故事！"
+        },
+        {
+            "name": "hbui.RealmsStories.home.banner.NewStory",
+            "description": "当你离开的时候，有一个新的故事！"
+        },
+        {
+            "name": "hbui.RealmsStories.home.banner.Welcome",
+            "description": "欢迎使用 Realms 故事"
+        },
+        {
             "name": "hbui.RealmsStories.members",
             "description": "成员"
+        },
+        {
+            "name": "hbui.RealmsStories.members.byAlphabeticalAscending",
+            "description": "按字母顺序升序"
+        },
+        {
+            "name": "hbui.RealmsStories.members.byAlphabeticalDescending",
+            "description": "按字母顺序降序"
+        },
+        {
+            "name": "hbui.RealmsStories.members.friends",
+            "description": "好友"
+        },
+        {
+            "name": "hbui.RealmsStories.members.byLeastRecent",
+            "description": "按时间顺序由远至近"
+        },
+        {
+            "name": "hbui.RealmsStories.members.byMostRecent",
+            "description": "按时间顺序由近至远"
+        },
+        {
+            "name": "hbui.RealmsStories.members.online",
+            "description": "在线"
+        },
+        {
+            "name": "hbui.RealmsStories.members.operators",
+            "description": "运算符"
+        },
+        {
+            "name": "hbui.RealmsStories.members.search",
+            "description": "搜索"
+        },
+        {
+            "name": "hbui.RealmsStories.members.showAll",
+            "description": "全部显示"
+        },
+        {
+            "name": "hbui.RealmsStories.members.visitors",
+            "description": "造访者"
+        },
+        {
+            "name": "hbui.RealmsStories.new",
+            "description": "新建"
         },
         {
             "name": "hbui.RealmsStories.storyFeed.emptyStoryFeedText",
@@ -59779,6 +59923,10 @@ export default {
         {
             "name": "hbui.RealmsStories.timeline",
             "description": "时间线"
+        },
+        {
+            "name": "hbui.RealmsStories.timeline.signIn",
+            "description": "登录 %1$s"
         },
         {
             "name": "hbui.RenderDistanceWarningRoute.body1",
@@ -59854,11 +60002,11 @@ export default {
         },
         {
             "name": "hbui.TouchControlSelectionRoute.classicinfo",
-            "description": "点击并按住箭头可移动。点击并按住方块可与方块进行交互。"
+            "description": "点击箭头移动。拖动其他任何位置环顾四周。点击并按住块以与它们进行交互。"
         },
         {
             "name": "hbui.TouchControlSelectionRoute.classicspecific",
-            "description": "方向键和接触点上的交互"
+            "description": "方向键和点击进行交互"
         },
         {
             "name": "hbui.TouchControlSelectionRoute.crosshair",
@@ -59870,11 +60018,11 @@ export default {
         },
         {
             "name": "hbui.TouchControlSelectionRoute.crosshairinfo",
-            "description": "使用摇杆四处移动。瞄准十字线并使用按钮与方块进行交互。"
+            "description": "拖动操纵杆进行移动。拖动其他任何位置环顾四周。瞄准十字准线并使用按钮与方块进行交互。"
         },
         {
             "name": "hbui.TouchControlSelectionRoute.crosshairspecific",
-            "description": "摇杆和十字线上的交互"
+            "description": "操纵杆和瞄准十字准线"
         },
         {
             "name": "hbui.TouchControlSelectionRoute.header",
@@ -59906,11 +60054,67 @@ export default {
         },
         {
             "name": "hbui.TouchControlSelectionRoute.touchinfo",
-            "description": "点击并拖动摇杆进行移动。使用按钮进行冲刺、潜行和跳跃。"
+            "description": "拖动操纵杆进行移动。拖动其他任何位置环顾四周。点击并按住块以与它们进行交互。"
         },
         {
             "name": "hbui.TouchControlSelectionRoute.touchspecific",
-            "description": "摇杆和接触点上的交互"
+            "description": "操纵杆和点击进行交互"
+        },
+        {
+            "name": "hbui.ProfanityWarningModalRoute.body",
+            "description": "您输入的文本包含可能对他人具有冒犯性的词汇，因此无法使用。请重试。"
+        },
+        {
+            "name": "hbui.ProfanityWarningModalRoute.title",
+            "description": "猥亵语言过滤器"
+        },
+        {
+            "name": "hbui.ProfanityWarningModalRoute.close",
+            "description": "关闭"
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.temporary",
+            "description": "暂停"
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.permanent",
+            "description": "禁止"
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.title",
+            "description": "你一直在%1$s"
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.body",
+            "description": "You have been %1$s from playing multiplayer in Minecraft due to \"%2$s\". You won't be able to play on servers, join realms, host or join multiplayer games or use the marketplace."
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.body2",
+            "description": "Click '%1$s' below to view our community standards and how to submit a case review request if you feel you were %2$s in error."
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.body.hour",
+            "description": "您的冻结还剩 1 小时。"
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.body.hours",
+            "description": "You have %1$s hours remaining on your suspension."
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.body.day",
+            "description": "您的冻结还剩 1 天。"
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.body.days",
+            "description": "You have %1$s days remaining on your suspension."
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.body.forever",
+            "description": "这项禁令是永久性的。"
+        },
+        {
+            "name": "hbui.PlayerBannedModalRoute.close",
+            "description": "更多信息"
         },
         {
             "name": "hbui.BackButton.back",
@@ -60033,11 +60237,19 @@ export default {
             "description": "切换菜单"
         },
         {
-            "name": "hbui.Modal.back",
+            "name": "hbui.Modal.backInputLegend",
+            "description": "向后"
+        },
+        {
+            "name": "hbui.Modal.backNarration",
             "description": "返回按钮"
         },
         {
-            "name": "hbui.Modal.close",
+            "name": "hbui.Modal.closeInputLegend",
+            "description": "关闭"
+        },
+        {
+            "name": "hbui.Modal.closeNarration",
             "description": "关闭按钮"
         },
         {
@@ -60109,16 +60321,20 @@ export default {
             "description": "可以是"
         },
         {
+            "name": "hbui.Slider.currentValue",
+            "description": "当前值为"
+        },
+        {
             "name": "hbui.Slider.elementType",
             "description": "滑块"
         },
         {
             "name": "hbui.Slider.maxValueIs",
-            "description": "到"
+            "description": "最大值为"
         },
         {
             "name": "hbui.Slider.minValueIs",
-            "description": "从"
+            "description": "最小值为"
         },
         {
             "name": "hbui.Slider.valueIs",
@@ -60254,7 +60470,7 @@ export default {
         },
         {
             "name": "hbui.BaseDropdown.enumeration",
-            "description": "第 %1$s 个，共 %2$s 个"
+            "description": "%1$s 个 共 %2$s 个"
         },
         {
             "name": "hbui.BaseDropdown.open",
@@ -60275,6 +60491,22 @@ export default {
         {
             "name": "hbui.BaseDropdown.toggleElementType",
             "description": "选项"
+        },
+        {
+            "name": "hbui.BaseSlider.currentValue",
+            "description": "当前值为"
+        },
+        {
+            "name": "hbui.BaseSlider.elementType",
+            "description": "滑块"
+        },
+        {
+            "name": "hbui.BaseSlider.maxValueIs",
+            "description": "最大值为"
+        },
+        {
+            "name": "hbui.BaseSlider.minValueIs",
+            "description": "最小值为"
         },
         {
             "name": "hbui.BaseTextField.addedNarration",
@@ -62225,6 +62457,10 @@ export default {
             "description": "无效坐标"
         },
         {
+            "name": "chat.coordinatesInvalidLong",
+            "description": "无效坐标：确保您正在查看方块"
+        },
+        {
             "name": "chestScreen.header.large",
             "description": "大箱子"
         },
@@ -63873,6 +64109,26 @@ export default {
             "description": "immutableworld = %s"
         },
         {
+            "name": "commands.itemswithtag.description",
+            "description": "列出具有给定标记的所有项目。"
+        },
+        {
+            "name": "commands.itemswithtag.success.single",
+            "description": "有 %d 个项目带标记 %s："
+        },
+        {
+            "name": "commands.itemswithtag.success.multiple",
+            "description": "有 %d 个项目带标记 %s："
+        },
+        {
+            "name": "commands.itemswithtag.success.list.items",
+            "description": "%s"
+        },
+        {
+            "name": "commands.itemswithtag.fail.noitemsfound",
+            "description": "项目均未包含标记 %s。"
+        },
+        {
             "name": "commands.kick.description",
             "description": "从服务器踢出一名玩家。"
         },
@@ -63911,6 +64167,14 @@ export default {
         {
             "name": "commands.kick.no.teacher",
             "description": "不能将教师从游戏中移除。"
+        },
+        {
+            "name": "commands.kill.attemptKillPlayerCreative.edu",
+            "description": "玩家在创造模式下无法被移除。"
+        },
+        {
+            "name": "commands.kill.attemptKillPlayerCreative",
+            "description": "玩家在创造模式下无法被杀死。"
         },
         {
             "name": "commands.kill.successful.edu",
@@ -64007,6 +64271,30 @@ export default {
         {
             "name": "commands.loot.replaceSuccess",
             "description": "用 %d 物品替换 %d 个栏位的 %s %d 的 %s"
+        },
+        {
+            "name": "commands.loot.replaceSuccess.block",
+            "description": "已将%s插槽%d替换为%d项%d插槽"
+        },
+        {
+            "name": "commands.tagsfromitem.description",
+            "description": "列出与给定项目关联的所有标记。"
+        },
+        {
+            "name": "commands.tagsfromitem.success.single",
+            "description": "项目 %s 上有 %d 个标记："
+        },
+        {
+            "name": "commands.tagsfromitem.success.multiple",
+            "description": "项目 %s 上有 %d 个标记："
+        },
+        {
+            "name": "commands.tagsfromitem.success.list.tags",
+            "description": "%s"
+        },
+        {
+            "name": "commands.tagsfromitem.fail.notagsfound",
+            "description": "在项目 %s 上找不到任何标记。"
         },
         {
             "name": "commands.togglecontentlog.toggle",
@@ -64355,6 +64643,10 @@ export default {
         {
             "name": "commands.ride.summonRide.success",
             "description": "这些骑手成功召唤的坐骑：%1$s"
+        },
+        {
+            "name": "commands.ride.summonRide.skipped",
+            "description": "对于已拥有游乐设施的以下实体，不会召唤游乐设施：%1$s"
         },
         {
             "name": "commands.ride.summonRider.failed",
@@ -68061,6 +68353,10 @@ export default {
             "description": "由于您 Microsoft 账户的设置问题，您无法进行在线多人游戏。请确保您的在线安全设置已允许多人游戏和俱乐部，且当前您已拥有 Xbox Live 金会员订阅。请前往 aka.ms/MCMultiplayerHelp 查看如何更改这些设置。"
         },
         {
+            "name": "networkWorld.multiplayerPrivilegesUnknown",
+            "description": "发生阻止在线游戏的未知错误。请稍后再试。"
+        },
+        {
             "name": "networkWorld.versionOutOfDate",
             "description": "您无法玩在线多人游戏，因为您没有运行最新版本。请安装最新版本以访问在线功能。"
         },
@@ -68781,36 +69077,48 @@ export default {
             "description": "您的帐户出现错误。 我们需要解决这个问题，然后您才能使用 Marketplace。 如果此问题连续多天都无法解决，请联系支持人员。"
         },
         {
+            "name": "playfab.account.banned.temporary",
+            "description": "暂停"
+        },
+        {
+            "name": "playfab.account.banned.permanent",
+            "description": "禁止"
+        },
+        {
             "name": "playfab.account.banned.title",
-            "description": "您被禁了"
+            "description": "您已被%s"
         },
         {
             "name": "playfab.account.banned.body",
-            "description": "您已被禁止游玩《我的世界》多人游戏。您将无法在服务器上游玩游戏、加入 Realms、主办游戏、加入多人游戏或是访问市场。"
+            "description": "您已被%s玩《我的世界》多人游戏。您将无法在服务器上玩游戏、加入 Realms、主办游戏、加入多人游戏或是访问市场。"
         },
         {
             "name": "playfab.account.banned.body.line1",
-            "description": "由于“%s”，您已被禁止游玩《我的世界》多人游戏。您将无法在服务器上游玩游戏、加入 Realms、主办游戏、加入多人游戏或是访问市场。"
+            "description": "由于“%s”，您已被%s玩《我的世界》多人游戏。您将无法在服务器上玩游戏、加入 Realms、主办游戏、加入多人游戏或是访问市场。"
         },
         {
-            "name": "playfab.account.banned.body.line2.hour",
+            "name": "playfab.account.banned.body.line2",
+            "description": "点击下方的“%s”查看我们的社群规则，以及当您认为自己遇到%s错误时该如何提交案例审核请求。"
+        },
+        {
+            "name": "playfab.account.banned.body.line3.hour",
             "description": "您的冻结还剩 1 小时。"
         },
         {
-            "name": "playfab.account.banned.body.line2.hours",
+            "name": "playfab.account.banned.body.line3.hours",
             "description": "您的冻结还剩 %d 小时。"
         },
         {
-            "name": "playfab.account.banned.body.line2.day",
+            "name": "playfab.account.banned.body.line3.day",
             "description": "您的冻结还剩 1 天。"
         },
         {
-            "name": "playfab.account.banned.body.line2.days",
+            "name": "playfab.account.banned.body.line3.days",
             "description": "您的冻结还剩 %d 天。"
         },
         {
-            "name": "playfab.account.banned.body.line2.forever",
-            "description": "此冻结是永久性的。"
+            "name": "playfab.account.banned.body.line3.forever",
+            "description": "这项禁令是永久性的。"
         },
         {
             "name": "playfab.account.banned.body.button",
@@ -69417,6 +69725,30 @@ export default {
             "description": "末地"
         },
         {
+            "name": "disabledSkin.title",
+            "description": "您当前显示的身份为史蒂夫"
+        },
+        {
+            "name": "disabledSkin.body.onJoin",
+            "description": "此服务器已禁用%s。您可以在更衣室更换其他皮肤。"
+        },
+        {
+            "name": "disabledSkin.body.dressingRoom",
+            "description": "此服务器已禁用%s。确定要继续穿戴这款皮肤吗？"
+        },
+        {
+            "name": "disabledSkin.type.customSkins",
+            "description": "自定义皮肤"
+        },
+        {
+            "name": "disabledSkin.type.persona",
+            "description": "角色"
+        },
+        {
+            "name": "disabledSkin.type.both",
+            "description": "自定义皮肤和角色"
+        },
+        {
             "name": "disconnect.closed",
             "description": "连接已关闭"
         },
@@ -69491,6 +69823,14 @@ export default {
         {
             "name": "disconnect.timeout",
             "description": "连接超时"
+        },
+        {
+            "name": "disconnect.scriptWatchdog",
+            "description": "由于未处理的脚本监视程序异常，服务器已关闭。"
+        },
+        {
+            "name": "disconnect.scriptWatchdogOutOfMemory",
+            "description": "服务器由于超出脚本内存限制而关闭。"
         },
         {
             "name": "disconnectionScreen.header.realms_hidden",
@@ -69729,6 +70069,10 @@ export default {
             "description": "下载或应用资源包时遇到问题。"
         },
         {
+            "name": "disconnectionScreen.restartClient",
+            "description": "无法连接，请重新启动客户端。"
+        },
+        {
             "name": "disconnectionScreen.badPacket",
             "description": "服务器发送了破损的数据包。"
         },
@@ -69787,6 +70131,10 @@ export default {
         {
             "name": "disconnectionScreen.editor.mismatchVanillaToEditor",
             "description": "服务器处于编辑器模式。连接失败。"
+        },
+        {
+            "name": "disconnectionScreen.clientsideGenerationDesync",
+            "description": "服务器和客户端为功能切换“客户端生成”设置了不同的值"
         },
         {
             "name": "storageSpaceWarningScreen.frontend",
@@ -70717,7 +71065,7 @@ export default {
             "description": "编辑外部服务器"
         },
         {
-            "name": "feature.endcity",
+            "name": "feature.end_city",
             "description": "末地之城"
         },
         {
@@ -70757,7 +71105,7 @@ export default {
             "description": "沉船"
         },
         {
-            "name": "feature.buriedtreasure",
+            "name": "feature.buried_treasure",
             "description": "埋藏的宝藏"
         },
         {
@@ -70765,15 +71113,15 @@ export default {
             "description": "海洋废墟"
         },
         {
-            "name": "feature.pillageroutpost",
+            "name": "feature.pillager_outpost",
             "description": "掠夺者前哨"
         },
         {
-            "name": "feature.bastionremnant",
+            "name": "feature.bastion_remnant",
             "description": "堡垒遗迹"
         },
         {
-            "name": "feature.ruinedportal",
+            "name": "feature.ruined_portal",
             "description": "破坏的传送门"
         },
         {
@@ -71022,6 +71370,10 @@ export default {
         },
         {
             "name": "gameTip.playerMovement.touch",
+            "description": "移动 :tip_virtual_joystick: 进行移动。"
+        },
+        {
+            "name": "gameTip.playerMovement.touch.classic",
             "description": "触摸 :tip_touch_forward:、:tip_touch_left:、:tip_touch_back: 和 :tip_touch_right: 可进行移动。"
         },
         {
@@ -71034,6 +71386,10 @@ export default {
         },
         {
             "name": "gameTip.jumpMovement.touch",
+            "description": "点击 :tip_virtual_button_jump: 可跳跃。"
+        },
+        {
+            "name": "gameTip.jumpMovement.touch.classic",
             "description": "点击 :tip_touch_jump: 可跳跃。"
         },
         {
@@ -71047,6 +71403,10 @@ export default {
         {
             "name": "gameTip.jumpForward.touch",
             "description": "按住 :tip_touch_forward: 和轻触 :tip_touch_jump: 以向前跳。"
+        },
+        {
+            "name": "gameTip.jumpForward.touch.classic",
+            "description": "按住 :tip_touch_forward: 并点击 :tip_touch_jump: 以向前跳跃。"
         },
         {
             "name": "gameTip.jumpForward.controller",
@@ -71063,6 +71423,14 @@ export default {
         {
             "name": "gameTip.breakWood.touch",
             "description": "点击并按住一棵树以打碎木头。"
+        },
+        {
+            "name": "gameTip.breakWood.touch.crosshair.withactionbuttons",
+            "description": "对一棵树点击并按住 :tip_virtual_button_action_attack_or_destroy: 以打碎木头。"
+        },
+        {
+            "name": "gameTip.breakWood.touch.crosshair.withoutactionbuttons",
+            "description": "瞄准 :tip_crosshair: 树并按住屏幕以打碎木头。"
         },
         {
             "name": "gameTip.breakWood.controller",
@@ -71141,10 +71509,6 @@ export default {
             "description": "按 :tip_left_trigger: 以打开配方书。"
         },
         {
-            "name": "gameTip.open.recipe.touchcontroller",
-            "description": "在此处按 :_input_key.jump: 以打开搜索选项卡。"
-        },
-        {
             "name": "gameTip.craftTable.keyboard",
             "description": "light_mouse_left_button: 点击此处以选择工作台配方。"
         },
@@ -71201,6 +71565,14 @@ export default {
             "description": "点击地面，放置好工作台。"
         },
         {
+            "name": "gameTip.placeCraftTable.touch.crosshair.withactionbuttons",
+            "description": "瞄准 :tip_crosshair: 并点击 :tip_virtual_button_action_build_or_use: 以将工作台放在地上。"
+        },
+        {
+            "name": "gameTip.placeCraftTable.touch.crosshair.withoutactionbuttons",
+            "description": "瞄准 :tip_crosshair: 并点击屏幕以将工作台放在地上。"
+        },
+        {
             "name": "gameTip.placeCraftTable.controller",
             "description": "按 :_input_key.use:，放置好工作台。"
         },
@@ -71211,6 +71583,14 @@ export default {
         {
             "name": "gameTip.useCraftTable.touch",
             "description": "触碰工作台开始使用。"
+        },
+        {
+            "name": "gameTip.useCraftTable.touch.crosshair.withactionbuttons",
+            "description": "将 :tip_crosshair: 瞄准工作台并点击 :tip_virtual_button_action_build_or_use: 以使用它。"
+        },
+        {
+            "name": "gameTip.useCraftTable.touch.crosshair.withoutactionbuttons",
+            "description": "将 :tip_crosshair: 瞄准工作台并点击屏幕以使用它。"
         },
         {
             "name": "gameTip.useCraftTable.controller",
@@ -79477,6 +79857,10 @@ export default {
             "description": "粉状雪桶"
         },
         {
+            "name": "item.goat_horn.name",
+            "description": "山羊角"
+        },
+        {
             "name": "item.minecraft.goat_horn.sound.0",
             "description": "思考"
         },
@@ -80057,6 +80441,10 @@ export default {
             "description": "端口"
         },
         {
+            "name": "edu.pause.nethernetLabel",
+            "description": "连接信息"
+        },
+        {
             "name": "key.attack",
             "description": "攻击/摧毁"
         },
@@ -80103,6 +80491,14 @@ export default {
         {
             "name": "key.command",
             "description": "输入指令"
+        },
+        {
+            "name": "key.copy_coordinates",
+            "description": "复制坐标"
+        },
+        {
+            "name": "key.copy_facing_coordinates",
+            "description": "复制朝向坐标"
         },
         {
             "name": "key.cycleItemLeft",
@@ -80179,6 +80575,30 @@ export default {
         {
             "name": "key.mobeffectsandinteractwithtoast",
             "description": "开启通知/生物效果"
+        },
+        {
+            "name": "key.script_toggle",
+            "description": "切换鼠标模式"
+        },
+        {
+            "name": "key.script_cancel",
+            "description": "取消当前操作"
+        },
+        {
+            "name": "key.script_open_map",
+            "description": "打开地图 UI"
+        },
+        {
+            "name": "key.script_open_chat",
+            "description": "打开聊天 UI"
+        },
+        {
+            "name": "key.script_open_inventory",
+            "description": "打开物品栏 UI"
+        },
+        {
+            "name": "key.script_open_mission",
+            "description": "打开任务 UI"
         },
         {
             "name": "key.inventory",
@@ -80391,6 +80811,10 @@ export default {
         {
             "name": "keyboard.keyName.control",
             "description": "控制"
+        },
+        {
+            "name": "keyboard.keyName.alt",
+            "description": "替代"
         },
         {
             "name": "keyboard.keyName.capsLock",
@@ -80775,6 +81199,10 @@ export default {
         {
             "name": "keyboard.keyName.control.short",
             "description": "CTRL"
+        },
+        {
+            "name": "keyboard.keyName.alt.short",
+            "description": "ALT"
         },
         {
             "name": "keyboard.keyName.capsLock.short",
@@ -81227,6 +81655,10 @@ export default {
         {
             "name": "menu.editor.play",
             "description": "继续"
+        },
+        {
+            "name": "menu.cast_select_title",
+            "description": "选择你的初始角色"
         },
         {
             "name": "merchant.deprecated",
@@ -81749,6 +82181,10 @@ export default {
             "description": "控制…"
         },
         {
+            "name": "options.control_alt_keybinds_section",
+            "description": "以下键与“CTRL + ALT”一起使用"
+        },
+        {
             "name": "options.credits",
             "description": "制作团队"
         },
@@ -81825,6 +82261,10 @@ export default {
             "description": "EDU 登录 Token 刷新阀值秒数"
         },
         {
+            "name": "options.dev_side_by_side_comparison_rate",
+            "description": "并排比较率"
+        },
+        {
             "name": "options.dev_playfab_token_refresh_threshold",
             "description": "Playfab 令牌刷新阈值分钟数"
         },
@@ -81899,6 +82339,10 @@ export default {
         {
             "name": "options.dev_chunk_map_mode_client",
             "description": "客户端"
+        },
+        {
+            "name": "options.dev_chunk_map_mode_client_main_chunksource",
+            "description": "客户端 (MainChunkSource)"
         },
         {
             "name": "options.dev_chunk_map_mode_server_chunk_state",
@@ -82566,7 +83010,11 @@ export default {
         },
         {
             "name": "options.dev_sunsetting_tier.four",
-            "description": "阶段 4 - TBD"
+            "description": "阶段 4 - 1024MB"
+        },
+        {
+            "name": "options.dev_sunsetting_tier.five",
+            "description": "阶段 5 - 待定"
         },
         {
             "name": "options.dev_sunsetting_tier.not_pending",
@@ -82813,6 +83261,10 @@ export default {
             "description": "超级花式"
         },
         {
+            "name": "options.go_to_keybinds",
+            "description": "转到键绑定"
+        },
+        {
             "name": "options.group.audio",
             "description": "声音"
         },
@@ -82851,6 +83303,10 @@ export default {
         {
             "name": "options.guiScale.auto",
             "description": "自动"
+        },
+        {
+            "name": "options.guiScale.disabled",
+            "description": "此显示器不支持 UI 缩放，很可能是因为分辨率较低。"
         },
         {
             "name": "options.guiScale.large",
@@ -83434,7 +83890,7 @@ export default {
         },
         {
             "name": "options.darknessEffectModifier.message",
-            "description": "调整在黑暗效果（由生物、药水等）引起的黑屏效果时屏幕的暗度"
+            "description": "调整在黑暗效果（由生物、药水和其他资源）引起的黑屏效果时屏幕的暗度"
         },
         {
             "name": "options.darknessEffectModifier",
@@ -84201,6 +84657,10 @@ export default {
             "description": "此项目中无法获得成就。"
         },
         {
+            "name": "options.dcast_character.Title",
+            "description": "用于角色创建的新角色"
+        },
+        {
             "name": "patchNotes.loading",
             "description": "正在加载补丁说明"
         },
@@ -84246,7 +84706,7 @@ export default {
         },
         {
             "name": "sunsetting.popup.pendingSunset.ios_android",
-            "description": "我们即将无法支持此设备。目前您仍能够继续收到更新，但到 2021 年 6 月为止，您将收到此设备的最后一次更新。对于给您带来的不便，我们深表歉意。%s收到最终更新后，您仍然可以在您的世界中进行游戏，并使用您在市场购买的物品（包括 Minecoins）。由此设备管理的 Realms 将继续运行，除非 Realm 所有者选择在另一台设备上进行更新。您将无法收到最新的更新版本，且将无法与继续接收更新的设备或 Realms 玩多人游戏。您也将无法连接到某些服务器。%s单击按钮了解更多信息，包括将世界转移到新设备的方法。"
+            "description": "我们即将无法支持此设备。目前您仍能够继续收到更新，但到 2021 年 11 月为止，您将收到此设备的最后一次更新。对于给您带来的不便，我们深表歉意。%s收到最终更新后，您仍然可以在您的世界中进行游戏，并使用您在市场购买的物品（包括 Minecoins）。由此设备管理的 Realms 将继续运行 6 个月，除非 Realm 所有者选择在另一台设备上进行更新。您将无法收到最新的更新版本，且将无法与继续接收更新的设备或 Realms 玩多人游戏。您也将无法连接到某些服务器。%s单击按钮了解更多信息，包括将世界转移到新设备的方法。 "
         },
         {
             "name": "sunsetting.popup.sunset.ios_android",
@@ -85485,6 +85945,10 @@ export default {
             "description": "创建角色"
         },
         {
+            "name": "profileScreen.selectPrebuiltCharacter",
+            "description": "从角色列表中选择"
+        },
+        {
             "name": "profileScreen.create_persona_confirm_skin",
             "description": "创建经典皮肤"
         },
@@ -85581,6 +86045,14 @@ export default {
             "description": "复制世界"
         },
         {
+            "name": "progressScreen.title.deleteStorageAreaContent",
+            "description": "清除存储缓存"
+        },
+        {
+            "name": "progressScreen.message.deleteStorageAreaContent",
+            "description": "这可能需要几分钟。"
+        },
+        {
             "name": "progressScreen.message.copyingWorld",
             "description": "正在复制世界... %d%%"
         },
@@ -85667,6 +86139,10 @@ export default {
         {
             "name": "progressScreen.message.uploadingWorld",
             "description": "将世界上传到云。请不要关闭《我的世界》或关闭设备。"
+        },
+        {
+            "name": "progressScreen.message.uploadingWorldError",
+            "description": "世界上传失败。是否要重试？"
         },
         {
             "name": "progressScreen.message.copyingPacks",
@@ -86409,6 +86885,10 @@ export default {
             "description": "基础世界"
         },
         {
+            "name": "tile.sculk_sensor.name",
+            "description": "潜声传感器"
+        },
+        {
             "name": "tile.sculk.name",
             "description": "潜声"
         },
@@ -86657,7 +87137,7 @@ export default {
             "description": "带箱子的船"
         },
         {
-            "name": "feature.ancientcity",
+            "name": "feature.ancient_city",
             "description": "古城"
         },
         {
@@ -88222,7 +88702,7 @@ export default {
         },
         {
             "name": "store.realmsPlus.faq.answer4",
-            "description": "Realms Plus 目前适用于手机端、Windows 10、Xbox One 主机、Nintendo Switch 及 PlayStation 4 的 Minecraft。如果您已登录到您的 Microsoft 账户，您可以在上述任何设备上使用 Realms 并使用 Realms Plus 中的任何内容。"
+            "description": "Realms Plus 目前适用于任何可安装《我的世界》基岩版的平台。如果您已登录 Microsoft 帐户，则可以在任何这些设备上玩 Realms 并使用 Realms Plus 中的任何内容。"
         },
         {
             "name": "store.realmsPlus.faq.question5",
@@ -89649,6 +90129,14 @@ export default {
             "description": "按照 %s "
         },
         {
+            "name": "store.pagination.next",
+            "description": "下一个 >"
+        },
+        {
+            "name": "store.pagination.previous",
+            "description": "< 上一个"
+        },
+        {
             "name": "store.shareDescription",
             "description": "呜哇！%s做出了这么酷的包。您得来看看。"
         },
@@ -90078,7 +90566,7 @@ export default {
         },
         {
             "name": "tile.azalea_leaves_flowered.name",
-            "description": "盛开的杜鹃树叶"
+            "description": "盛开的杜鹃花树叶"
         },
         {
             "name": "tile.azalea.name",
@@ -90813,6 +91301,10 @@ export default {
             "description": "结构方块"
         },
         {
+            "name": "structure_block.waterlog_block",
+            "description": "水涝方块"
+        },
+        {
             "name": "tile.structure_void.name",
             "description": "结构空位"
         },
@@ -91074,7 +91566,7 @@ export default {
         },
         {
             "name": "tile.end_portal_frame.name",
-            "description": "末地传送门"
+            "description": "末地传送门框架"
         },
         {
             "name": "tile.farmland.name",
@@ -92414,7 +92906,7 @@ export default {
         },
         {
             "name": "tile.planks.big_oak.name",
-            "description": "深色橡木木板"
+            "description": "深色橡木板"
         },
         {
             "name": "tile.planks.birch.name",
@@ -92422,7 +92914,7 @@ export default {
         },
         {
             "name": "tile.planks.jungle.name",
-            "description": "丛林木木板"
+            "description": "丛林木板"
         },
         {
             "name": "tile.planks.name",
@@ -92430,11 +92922,11 @@ export default {
         },
         {
             "name": "tile.planks.oak.name",
-            "description": "橡木木板"
+            "description": "橡木板"
         },
         {
             "name": "tile.planks.spruce.name",
-            "description": "云杉木木板"
+            "description": "云杉木板"
         },
         {
             "name": "tile.wooden_slab.acacia.name",
@@ -95977,6 +96469,10 @@ export default {
             "description": "最大等级 - %s"
         },
         {
+            "name": "trade.nameAndLevel",
+            "description": "%s - %s"
+        },
+        {
             "name": "trade.level.1",
             "description": "新手"
         },
@@ -97177,6 +97673,14 @@ export default {
             "description": "暖调橘黄色"
         },
         {
+            "name": "copyCoordinates.copy_position_message",
+            "description": "已将当前位置复制到剪贴板：\"%s\""
+        },
+        {
+            "name": "copyCoordinates.copy_facing_message",
+            "description": "已将朝向位置复制到剪贴板：\"%s\""
+        },
+        {
             "name": "emotes.change_emotes",
             "description": "更改表情"
         },
@@ -97585,6 +98089,10 @@ export default {
             "description": "分析器已停止。无法保存档案。"
         },
         {
+            "name": "script.error.statsSaved",
+            "description": "无法保存脚本统计信息"
+        },
+        {
             "name": "script.success.debuggerListen",
             "description": "调试器正在监听端口 %s"
         },
@@ -97603,6 +98111,10 @@ export default {
         {
             "name": "script.success.profilerStopped",
             "description": "分析器已停止。档案已保存到 '%s'"
+        },
+        {
+            "name": "script.success.statsSaved",
+            "description": "脚本统计信息已保存到 '%s'                   "
         },
         {
             "name": "clientscript.description",
@@ -97682,19 +98194,23 @@ export default {
         },
         {
             "name": "gathering.button.minecraftLive",
-            "description": "《我的世界 Live》"
+            "description": "生物投票 2022："
         },
         {
             "name": "gathering.caption.startsIn",
-            "description": "距离开始还有 %s"
+            "description": "%s开业"
         },
         {
             "name": "gathering.caption.endsIn",
-            "description": "距离结束还有 %s"
+            "description": "%s关闭"
         },
         {
             "name": "gathering.caption.eventOver",
             "description": "活动结束"
+        },
+        {
+            "name": "gathering.caption.live",
+            "description": "立即直播"
         },
         {
             "name": "gathering.info.button.readMore",
@@ -97702,19 +98218,23 @@ export default {
         },
         {
             "name": "gathering.info.button.voteNow",
-            "description": "立即投票"
+            "description": "播放和投票"
+        },
+        {
+            "name": "gathering.info.button.watchStream",
+            "description": "观看《我的世界 Live》！"
         },
         {
             "name": "gathering.info.title.liveIsComing",
-            "description": "《我的世界 Live》即将推出！"
+            "description": "永远改变我的世界！"
         },
         {
             "name": "gathering.info.header.minecraftLive",
-            "description": "《我的世界 Live》"
+            "description": "生物投票 2022："
         },
         {
             "name": "gathering.info.body.liveIsComing",
-            "description": "是时候为《我的世界》添加新生物了，选择权在您手中。"
+            "description": "哪个生物应该加入我的世界？进入我们的块状狂欢节，玩一些迷你游戏，并投出你的一票！您可以随心所欲地投票和玩游戏，但只有最终的投票才算数。获胜者将于美国东部时间10月15日中午在《我的世界》直播中宣布！"
         },
         {
             "name": "gathering.info.modal.title.connectFail",
@@ -97727,6 +98247,134 @@ export default {
         {
             "name": "gathering.connect.title",
             "description": "正在查找服务器..."
+        },
+        {
+            "name": "gathering.info.qr.title.onlineService",
+            "description": "在网络上投票"
+        },
+        {
+            "name": "gathering.info.qr.body.onlineService.nso",
+            "description": "您需要任天堂开关在线会员资格才能在Minecraft中投票。请在网络上投票：aka.ms/MobVote"
+        },
+        {
+            "name": "gathering.info.qr.body.onlineService.psn",
+            "description": "您需要登录“游戏机网络”才能在《我的世界》中投票。请登录或在网络上投票：aka.ms/MobVote"
+        },
+        {
+            "name": "gathering.info.qr.body.onlineService",
+            "description": "您需要登录才能在《我的世界》中投票。请在网络上投票：aka.ms/MobVote"
+        },
+        {
+            "name": "gathering.info.qr.title.childAccount",
+            "description": "不允许在线播放"
+        },
+        {
+            "name": "gathering.info.qr.body.childAccount",
+            "description": "您当前的家长控制限制您在线玩游戏。请在我们的网站上投票：aka.ms/MobVote"
+        },
+        {
+            "name": "gathering.info.qr.title.console",
+            "description": "观看直播活动"
+        },
+        {
+            "name": "gathering.info.qr.body.console",
+            "description": "立即加入优酷直播：aka.ms/MinecraftLive"
+        },
+        {
+            "name": "gathering.info.signIn.title",
+            "description": "登录投票"
+        },
+        {
+            "name": "gathering.info.signIn.body",
+            "description": "请登录您的微软帐户以参加暴民投票。"
+        },
+        {
+            "name": "gathering.st.button.minecraftLive",
+            "description": "播放和投票"
+        },
+        {
+            "name": "gathering.st.caption.startsIn",
+            "description": "%s开业"
+        },
+        {
+            "name": "gathering.st.caption.endsIn",
+            "description": "%s关闭"
+        },
+        {
+            "name": "gathering.st.caption.eventOver",
+            "description": "活动结束"
+        },
+        {
+            "name": "gathering.st.info.button.readMore",
+            "description": "阅读更多…"
+        },
+        {
+            "name": "gathering.st.info.button.voteNow",
+            "description": "播放和投票"
+        },
+        {
+            "name": "gathering.st.info.title.liveIsComing",
+            "description": "我的世界现场测试"
+        },
+        {
+            "name": "gathering.st.info.header.minecraftLive",
+            "description": "播放和投票"
+        },
+        {
+            "name": "gathering.st.info.body.liveIsComing",
+            "description": "帮助我们测试我的世界直播2022暴徒投票的投票服务器！如果您在《今日我的世界》八月剧集中加入了投票，那么您已经熟悉了服务器。我们邀请大家来投票，并留下来参加迷你游戏！"
+        },
+        {
+            "name": "gathering.st.info.modal.title.connectFail",
+            "description": "连接失败"
+        },
+        {
+            "name": "gathering.st.info.modal.body.connectFail",
+            "description": "很不幸，我们无法连接。请稍后再试。"
+        },
+        {
+            "name": "gathering.st.connect.title",
+            "description": "正在连接..."
+        },
+        {
+            "name": "gathering.st.info.qr.title.onlineService",
+            "description": "帐户受限"
+        },
+        {
+            "name": "gathering.st.info.qr.body.onlineService.nso",
+            "description": "您需要任天堂开关在线会员资格才能加入服务器。"
+        },
+        {
+            "name": "gathering.st.info.qr.body.onlineService.psn",
+            "description": "您需要登录“游戏机网络”才能加入服务器。"
+        },
+        {
+            "name": "gathering.st.info.qr.body.onlineService",
+            "description": "您需要登录才能加入服务器。"
+        },
+        {
+            "name": "gathering.st.info.qr.title.childAccount",
+            "description": "不允许在线播放"
+        },
+        {
+            "name": "gathering.st.info.qr.body.childAccount",
+            "description": "您当前的家长控制限制您在线玩游戏。"
+        },
+        {
+            "name": "gathering.st.info.qr.title.console",
+            "description": "观看直播活动"
+        },
+        {
+            "name": "gathering.st.info.qr.body.console",
+            "description": "立即加入优酷直播"
+        },
+        {
+            "name": "gathering.st.info.signIn.title",
+            "description": "登录投票"
+        },
+        {
+            "name": "gathering.st.info.signIn.body",
+            "description": "请登录您的微软帐户以参加暴民投票。"
         }
     ],
     "next": [
@@ -97741,7 +98389,7 @@ export default {
                 "searchable": false
             },
             "name": "next",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "",
@@ -97756,7 +98404,7 @@ export default {
                 }
             },
             "name": "boolean",
-            "minecraft_version": "1.19.11.01"
+            "minecraft_version": "1.19.30.04"
         },
         {
             "name": "false",

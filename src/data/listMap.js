@@ -4,6 +4,10 @@ export default {
     gamerule: {
         _position: "idlistweb.gamerule"
     },
+    "gamerule.value.{gameruleName}": {
+        // hard coded in generators/list.js
+        // TODO
+    },
     difficulty: {
         _position: "local.list.difficulty"
     },

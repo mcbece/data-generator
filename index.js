@@ -8,7 +8,7 @@ const __dirname = getDirname(import.meta)
 const option = {
     list: {
         caidlist: true,
-        idlistweb: true
+        idlistweb: false
     }
 }
 
