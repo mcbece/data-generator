@@ -1,5 +1,5 @@
 // import minimist from "minimist"
-import { Generator, initData } from "./src/index.js"
+import { Generator, perpareData } from "./src/index.js"
 import { getDirname } from "./src/lib/util.js"
 import logger from "./src/lib/logger.js"
 
@@ -7,12 +7,12 @@ const __dirname = getDirname(import.meta)
 
 const option = {
     list: {
-        caidlist: false,
-        idlistweb: false
+        caidlist: true,
+        idlistweb: true
     }
 }
 
-initData(option).then(data => {
+perpareData(option).then(data => {
     
     const generator = new Generator(data, __dirname + "/dist")
     generator.init()

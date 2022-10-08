@@ -53,7 +53,7 @@ async function initCaidlist() {
                     force: true
                 })
                 
-                logger.info("got", "OK", "caidlist", lang)
+                logger.info("perpareData", "OK", "caidlist", lang)
                 
             } catch (err) {
                 logger.errorText(err)

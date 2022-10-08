@@ -31,7 +31,7 @@ async function initIdlistweb() {
                         const { data } = await got(`${url}/data/${version}/${branch}.json`)
                         indexBranches.push(branch)
                         
-                        logger.info("got", "OK", "idlistweb", lang, version, branch)
+                        logger.info("perpareData", "OK", "idlistweb", lang, version, branch)
                         
                         fs.writeFileSync(path + `/${lang}/${version}/${branch}.json.js`, `export default ${JSON.stringify(data.enums, null, 4)}`)
                     } catch (err) {
